@@ -1,5 +1,5 @@
- bucket         = "${var.env}-tfstate-portfolio-site"
-    key            = "${var.env}/terraform.tfstate"
-    region         = var.region
+ bucket         = "dev-tfstate-portfolio-site"
+    key            = "dev/terraform.tfstate"
+    region         = "eu-central-1"
     encrypt        = true
-    dynamodb_table = "tfstate-portfolio-${var.env}"
+    dynamodb_table = "tfstate-portfolio-dev"
