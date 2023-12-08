@@ -6,7 +6,5 @@ provider "aws" {
 module "prod" {
   source = "../prod"
   
-  ami = var.ami
-  instance_type = var.instance_type
   az = "eu-central-1b"
 }
