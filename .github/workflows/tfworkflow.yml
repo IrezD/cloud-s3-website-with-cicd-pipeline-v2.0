@@ -35,14 +35,6 @@ jobs:
       run: terraform init
       working-directory: dev
 
-    - name: Terraform Format
-      run: terraform fmt
-      working-directory: prod
-
-    - name: Terraform Format
-      run: terraform fmt
-      working-directory: dev
-
     - name: Terraform Plan
       run: terraform plan -input=false
       working-directory: prod

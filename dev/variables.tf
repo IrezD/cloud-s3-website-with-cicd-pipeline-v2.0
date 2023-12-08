@@ -7,9 +7,9 @@ variable "instance_type" {
 }
 
 variable "az" {
-  
+
 }
 
 variable "environment_name" {
-  
+
 }
