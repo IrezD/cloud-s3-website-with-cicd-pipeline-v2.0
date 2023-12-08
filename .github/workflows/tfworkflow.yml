@@ -27,7 +27,7 @@ jobs:
     - name: AWS Credentials
       uses: aws-actions/configure-aws-credentials@v3
       with:
-        role-to-assume: arn:aws:iam::806066816337:role/OIDC-DEV-Environment-for-S3Prod
+        role-to-assume: arn:aws:iam::806066816337:role/OIDC-Github-Workflow-Config
         role-session-name: OIDC workflow configuration access
         aws-region: eu-central-1
 
