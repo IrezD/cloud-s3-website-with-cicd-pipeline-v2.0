@@ -1,5 +1,10 @@
 provider "aws" {
-  region = "eu-central-1"
+  region = var.region
+}
+
+terraform {
+  backend "s3" {
+  }
 }
 
 locals {
@@ -12,6 +17,6 @@ resource "aws_instance" "Demoinstance" {
   availability_zone = var.az
 
   tags = {
-    Name = var.environment_name
+    Name = var.tag_name
   }
 }

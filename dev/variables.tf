@@ -10,6 +10,23 @@ variable "az" {
 
 }
 
-variable "environment_name" {
+variable "tag_name" {
 
+}
+
+
+variable "region" {
+  type        = string
+  description = "Region where resources are deployed in"
+  default     = "eu-central-1"
+}
+
+variable "backendkey" {
+  type        = string
+  description = "Key for S3 remote backend configuration"
+}
+
+variable "env" {
+  type        = string
+  description = "Reference to different Environment"
 }

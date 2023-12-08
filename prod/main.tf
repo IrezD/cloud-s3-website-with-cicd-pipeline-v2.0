@@ -6,6 +6,7 @@ provider "aws" {
 module "dev" {
   source = "../dev"
 
-  az               = "eu-central-1b"
-  environment_name = "Production"
+  az       = "eu-central-1b"
+  tag_name = "Production"
+  env      = "prod"
 }
