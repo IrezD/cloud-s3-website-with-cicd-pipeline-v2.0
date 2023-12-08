@@ -33,7 +33,15 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
+      working-directory: prod
+
+    - name: Terraform Init
+      run: terraform init
       working-directory: dev
+
+    - name: Terraform Format
+      run: terraform fmt
+      working-directory: prod
 
     - name: Terraform Format
       run: terraform fmt
@@ -41,7 +49,15 @@ jobs:
 
     - name: Terraform Plan
       run: terraform plan -input=false
-      working-directory: dev
+      working-directory: prod
+        
+    - name: Terraform Plan
+      run: terraform plan -input=false
+      working-directory: dev 
+
+    - name: Terraform Apply
+      run: terraform apply -auto-approve
+      working-directory: prod
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
