@@ -9,7 +9,5 @@ locals {
 resource "aws_instance" "Demoinstance" {
   ami = var.ami
   instance_type = var.instance_type
-  tags = {
-    Name =  local.environment_name
-  }
+  availability_zone = var.az
 }
