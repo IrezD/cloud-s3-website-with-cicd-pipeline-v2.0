@@ -11,13 +11,9 @@ permissions:
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'Deploying Resources'
     runs-on: ubuntu-latest
-    environment: production
-
-    defaults:
-      run:
-        shell: bash
+    environment: Production
 
     steps:
     - name: Checkout

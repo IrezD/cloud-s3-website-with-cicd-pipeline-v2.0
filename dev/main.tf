@@ -2,10 +2,16 @@ provider "aws" {
   region = "eu-central-1"
 }
 
+locals {
+  environment_name = "Dev"
+}
 
-module "prod" {
-  source = "../prod"
-  
-  az = "eu-central-1b"
-  environment_name = "Dev Staging Environment"
+resource "aws_instance" "Demoinstance" {
+  ami = var.ami
+  instance_type = var.instance_type
+  availability_zone = var.az
+
+  tags = {
+    Name = var.environment_name
+  }
 }
