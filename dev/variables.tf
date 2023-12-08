@@ -21,11 +21,6 @@ variable "region" {
   default     = "eu-central-1"
 }
 
-variable "backendkey" {
-  type        = string
-  description = "Key for S3 remote backend configuration"
-}
-
 variable "env" {
   type        = string
   description = "Reference to different Environment"
