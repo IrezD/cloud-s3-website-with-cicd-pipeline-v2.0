@@ -31,24 +31,18 @@ jobs:
         role-session-name: OIDC-Github-Workflow-Config
         aws-region: eu-central-1
 
-    # # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-    # - name: Setup Terraform
-    #   uses: hashicorp/setup-terraform@v1
-    #   with:
-    #     cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-
     - name: Terraform Init
       run: terraform init
-      # working-directory: prod
+      working-directory: dev
 
     - name: Terraform Format
       run: terraform fmt
-      # working-directory: prod
+      working-directory: dev
 
     - name: Terraform Plan
       run: terraform plan -input=false
-      # working-directory: prod
+      working-directory: dev
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
-      # working-directory: prod
+      working-directory: dev
