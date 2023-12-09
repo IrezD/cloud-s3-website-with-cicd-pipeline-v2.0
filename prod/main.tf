@@ -10,6 +10,6 @@ module "dev" {
   source = "../dev"
 
   az       = "eu-central-1b"
-  tag_name = "new 2.0 Production"
+  tag_name = "Production"
   env      = "prod"
 }
