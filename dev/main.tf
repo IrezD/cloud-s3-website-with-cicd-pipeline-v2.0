@@ -6,10 +6,6 @@ terraform {
   backend "s3" {}
 }
 
-locals {
-  environment_name = "Dev"
-}
-
 resource "aws_instance" "Demoinstance" {
   ami               = var.ami
   instance_type     = var.instance_type

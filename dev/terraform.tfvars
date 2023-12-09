@@ -1,3 +1,3 @@
 az       = "eu-central-1a"
-tag_name = "Dev Enviroment"
+tag_name = "new Dev Enviroment"
 env      = "dev"
