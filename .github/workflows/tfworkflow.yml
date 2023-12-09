@@ -28,11 +28,11 @@ jobs:
         aws-region: eu-central-1
 
     - name: Terraform Init
-      run: terraform init -backend-config=dev/dev.tfbackend
+      run: terraform init -backend-config=dev.tfbackend
       working-directory: dev
 
     - name: Terraform Init
-      run: terraform init -backend-config=prod/prod.tfbackend
+      run: terraform init -backend-config=prod.tfbackend
       working-directory: prod
 
     - name: Terraform Plan
