@@ -1,3 +1,4 @@
 *.tfstate*
 *.terraform*
-*.tfbackend*
+*dev/dev.tfbackend*
+*prod/prod.tfbackend*
