@@ -1,3 +1,3 @@
 az       = "eu-central-1a"
-tag_name = "Only change made here"
+tag_name = "Staging Environment"
 env      = "dev"
