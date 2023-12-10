@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Owie - Resume</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(28, 26, 26);
+            font-weight: 600;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding-top: 50px;
+            padding-left: 120px;
+            /* background-color: rgba(241, 189, 111, 0.888); */
+            line-height: 23px;
+
+            background: linear-gradient(65deg, #f3f3f3, #c8c6c6); /* Adjust the gradient colors and angle */
+            color: #000000;
+        }
+
+        header{
+            margin-bottom: 2%;
+        }
+
+        header > p{
+            margin-left: 80px;
+        }
+
+
+        header > img{
+            margin-left: 30px;
+        }
+
+        ul > li > a{
+            text-decoration: none;
+            color: rgb(28, 26, 26);
+            font-weight: 600;
+            
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-top: 10px;
+            border-style: solid;
+            border-color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="padding-left: 18px;">Dennis Owie</h1>
+        <p>Profile</p>
+        <img src="profile-photo.jpg" alt="Profile Photo">
+        
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Email: <a href="mailto:dennysben@gmail.com">dennysben@gmail.com</a> </li>
+            <li>Phone: (+48) 793-376121</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/dennis-owie/">linkedin.com/in/dennis-owie/</a></li>
+            <li>GitHub: <a href="https://github.com/IrezD">github.com/IrezD</a></li>
+        </ul>
+    </section><br/>
+
+    <section>
+        <h2>Education</h2>
+        <p><strong>Warsaw University of Business</strong> - IT Management</p>
+        <p><strong>Graduation Year:</strong> 2022</p>
+    </section>
+
+    <section>
+        <h2>About this Project:</h2>
+        <p>This simple website was hosted on Amazon Simple Storage Service - S3 bucket. By utilizing Terraform, I was able to define the AWS resources required for <br> the S3 bucket, including its configuration, policies, and permissions. GitHub Actions was set up to respond to changes pushed to the main branch of the repository, <br>automatically triggering the redeployment process, ensuring seamless updates to the website.</p>
+        <p style="padding-top: 20px; padding-bottom: 10px;"><strong>Summary of the resources used:</strong></p>
+        <ul>
+            <li>- Terraform for defining and managing AWS resources.</li>
+            <li>- GitHub Actions for automation and CI/CD processes.</li>
+            <li>- S3 bucket serving as the hosting platform for this website.</li>
+        </ul>
+    </section>
+
+    </section>
+</body>
+
+</html>
