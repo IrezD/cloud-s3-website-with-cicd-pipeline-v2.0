@@ -1,9 +1,9 @@
-resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
+resource "aws_s3_bucket_policy" "site-bucket-policy" {
   bucket = aws_s3_bucket.site-bucket.id
-  policy = data.aws_iam_policy_document.site-bucket-policy.json
+  policy = data.aws_iam_policy_document.site-iam-policy.json
 }
 
-data "aws_iam_policy_document" "site-bucket-policy" {
+data "aws_iam_policy_document" "site-iam-policy" {
 statement {
   sid       = "Making S3 Bucket Public"
   effect    = "Allow"
