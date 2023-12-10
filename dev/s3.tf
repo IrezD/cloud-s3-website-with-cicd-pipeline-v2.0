@@ -13,11 +13,6 @@ resource "aws_s3_bucket_versioning" "bucket-versioning" {
   }
 }
 
-# resource "aws_s3_bucket_acl" "site-bucket-acl" {
-#   bucket = aws_s3_bucket.site-bucket.id
-#   acl    = "public-read"
-# }
-
 resource "aws_s3_bucket_public_access_block" "example" {
   bucket = aws_s3_bucket.site-bucket.id
 
