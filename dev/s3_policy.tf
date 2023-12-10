@@ -7,8 +7,8 @@ data "aws_iam_policy_document" "site-iam-policy" {
 statement {
   sid       = "Making S3 Bucket Public"
   principals {
-    type = "*"
-    identifiers = "*"
+    type = "AWS"
+    identifiers = ["*"]
   }
   effect    = "Allow"
   actions   = ["s3:GetObject", "s3:ListBucket"]
