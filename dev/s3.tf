@@ -28,7 +28,7 @@ resource "aws_s3_bucket_public_access_block" "example" {
 }
 
 resource "aws_s3_bucket_website_configuration" "bucket-website-config" {
-  bucket = aws_s3_bucket.site-bucket.bucket
+  bucket = aws_s3_bucket.site-bucket.id
 
   index_document {
     suffix = "index.html"
