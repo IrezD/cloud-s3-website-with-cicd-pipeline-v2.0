@@ -40,5 +40,4 @@ resource "aws_s3_object" "object" {
   key        = "index.html"
   source     = "../web/index.html"
   etag       = filemd5("../web/index.html")
-  depends_on = [aws_s3_bucket.site-bucket.bucket]
 }
