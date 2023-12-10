@@ -2,7 +2,7 @@ name: 'Staging Environment'
 
 on:
   push:
-    branches: [ "*" ]
+    branches: [ "*", "!main" ]
 
 permissions:
   contents: read
