@@ -40,8 +40,8 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
     viewer_protocol_policy = "redirect-to-https"
     min_ttl                = 0
-    default_ttl            = 600
-    max_ttl                = 86400
+    default_ttl            = 60
+    max_ttl                = 3600
   }
 
   price_class = "PriceClass_200"
