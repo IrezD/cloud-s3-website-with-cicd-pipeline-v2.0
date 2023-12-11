@@ -30,9 +30,20 @@ resource "aws_s3_bucket_website_configuration" "bucket-website-config" {
   }
 }
 
+#  ** -- Index html file ***
+
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.site-bucket.bucket
   key    = "index.html"
   source = "../web/index.html"
   etag   = filemd5("../web/index.html")
+}
+
+#  ** -- Index html file ***
+
+resource "aws_s3_object" "profile-object" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "profile_photo"
+  source = "../web/pic001/.jpg"
+  etag   = filemd5("../web/pic001/.jpg")
 }

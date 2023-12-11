@@ -5,7 +5,7 @@ resource "aws_s3_bucket_policy" "site-bucket-policy" {
 
 data "aws_iam_policy_document" "site-iam-policy" {
   statement {
-    sid = "Allowing Cloudfront to access S3 Bucket"
+    sid = "Allowing Cloudfront to access private S3 Bucket"
     principals {
       type        = "Service"
       identifiers = ["cloudfront.amazonaws.com"]

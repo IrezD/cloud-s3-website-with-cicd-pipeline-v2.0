@@ -9,7 +9,7 @@ terraform {
 module "dev" {
   source = "../dev"
 
-  az       = "eu-central-1b"
   tag_name = "Live Production"
   env      = "prod"
+  fqdn     = "denniowie.com"
 }
