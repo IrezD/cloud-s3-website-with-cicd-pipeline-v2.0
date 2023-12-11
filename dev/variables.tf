@@ -1,17 +1,5 @@
-variable "ami" {
-  default = "ami-0669b163befffbdfc"
-}
-
-variable "instance_type" {
-  default = "t2.micro"
-}
-
-variable "az" {
-
-}
-
 variable "tag_name" {
-
+  description = "Tag name for resources"
 }
 
 
@@ -24,4 +12,8 @@ variable "region" {
 variable "env" {
   type        = string
   description = "Reference to different Environment"
+}
+
+variable "fqdn" {
+  description = "Fuly qualified domain name"
 }
