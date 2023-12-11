@@ -31,8 +31,8 @@ resource "aws_s3_bucket_website_configuration" "bucket-website-config" {
 }
 
 resource "aws_s3_object" "object" {
-  bucket     = aws_s3_bucket.site-bucket.bucket
-  key        = "index.html"
-  source     = "../web/index.html"
-  etag       = filemd5("../web/index.html")
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "index.html"
+  source = "../web/index.html"
+  etag   = filemd5("../web/index.html")
 }

@@ -1,3 +1,3 @@
 tag_name = "Staging Environment"
 env      = "dev"
-fqdn = "dev.dennisowie.com"
+fqdn     = "dev.dennisowie.com"
