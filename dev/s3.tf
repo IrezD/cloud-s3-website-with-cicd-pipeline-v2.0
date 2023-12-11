@@ -40,7 +40,7 @@ resource "aws_s3_object" "object" {
   content_type = "text/html"
 }
 
-#  ** -- Index html file ***
+#  ** -- Index html file ****
 
 resource "aws_s3_object" "profile-object" {
   bucket = aws_s3_bucket.site-bucket.bucket
