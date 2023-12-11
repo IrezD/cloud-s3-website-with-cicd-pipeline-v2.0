@@ -11,5 +11,5 @@ module "dev" {
 
   tag_name = "Live Production"
   env      = "prod"
-  fqdn     = "denniowie.com"
+  fqdn     = "dennisowie.com"
 }
