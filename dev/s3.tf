@@ -44,6 +44,6 @@ resource "aws_s3_object" "object" {
 resource "aws_s3_object" "profile-object" {
   bucket = aws_s3_bucket.site-bucket.bucket
   key    = "profile_photo"
-  source = "../web/pic001/.jpg"
-  etag   = filemd5("../web/pic001/.jpg")
+  source = "../web/pic00.jpg"
+  etag   = filemd5("../web/pic001.jpg")
 }
