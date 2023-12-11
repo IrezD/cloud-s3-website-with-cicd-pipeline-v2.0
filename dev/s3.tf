@@ -37,6 +37,7 @@ resource "aws_s3_object" "object" {
   key    = "index.html"
   source = "../web/index.html"
   etag   = filemd5("../web/index.html")
+  content_type = "text/html"
 }
 
 #  ** -- Index html file ***
