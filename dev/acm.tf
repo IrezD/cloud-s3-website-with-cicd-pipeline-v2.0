@@ -4,7 +4,9 @@ import {
 }
 
 resource "aws_acm_certificate" "site-cert" {
-  tags = {
-    Name = var.tag_name
-  }
+    domain_name = var.fqdn
+
+    tags = {
+        Name = var.tag_name
+    }
 }
