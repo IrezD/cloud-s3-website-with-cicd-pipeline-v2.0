@@ -22,7 +22,7 @@ The objective of this project is to set up the deployment of a static website on
 
 ## Known Errors
 
-Expect an error when deploying the Certificate Manager configuration on the acm.tf file for the first time. This is because, email validation is required. So when running the configuration for the first time, it will trigger the validation email to be sent to your registered email address on your AWS account.
+Expect an error when deploying the Certificate Manager configuration on the acm.tf file for the first time. This is because Email validation is required. So when running the configuration for the first time, it will trigger the validation Email to be sent to your registered Email address on your AWS account.
 
 Search for the validation email (don't forget to check spam folder), once you are done approving certificate request via email - Run the worflow again and the error should be gone.
 
