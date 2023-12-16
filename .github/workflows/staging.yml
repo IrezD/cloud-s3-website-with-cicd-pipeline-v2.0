@@ -31,7 +31,7 @@ jobs:
       id: terraform-plan
       uses: dflook/terraform-plan@v1
       with:
-        path: .
+        path: terraform
         label: Staging
         backend_config_file: env/dev.tfbackend
         var_file: env/dev.tfvars
