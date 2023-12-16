@@ -4,7 +4,7 @@ locals {
 
 resource "aws_cloudfront_origin_access_control" "cloudfront-OAC" {
   name                              = "my ${var.env} orign access control"
-  description                       = "${var.tag_name} Policy"
+  description                       = "${var.env} Policy"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
@@ -19,7 +19,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   enabled             = true
   is_ipv6_enabled     = true
-  comment             = "Distribution for my ${var.tag_name}"
+  comment             = "Distribution for my ${var.env}"
   default_root_object = "index.html"
 
 
@@ -51,10 +51,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       restriction_type = "none"
       locations        = []
     }
-  }
-
-  tags = {
-    Environment = var.tag_name
   }
 
   viewer_certificate {

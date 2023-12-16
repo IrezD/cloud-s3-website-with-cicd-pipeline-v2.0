@@ -7,8 +7,4 @@ resource "aws_dynamodb_table" "tfstate-dynamodb-table" {
     name = "LockID"
     type = "S"
   }
-
-  tags = {
-    Name = var.tag_name
-  }
 }

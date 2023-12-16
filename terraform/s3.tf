@@ -1,9 +1,5 @@
 resource "aws_s3_bucket" "site-bucket" {
   bucket = "${var.env}-portfolio-website-2.0"
-
-  tags = {
-    Environment = var.tag_name
-  }
 }
 
 resource "aws_s3_bucket_versioning" "bucket-versioning" {
