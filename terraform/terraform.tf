@@ -16,7 +16,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Environment = "title(${var.env}) Environment"
+      Environment = "${title(var.env)} Environment"
     }
   }
 }
@@ -27,7 +27,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Environment = "title(${var.env}) Environment"
+      Environment = "${title(var.env)} Environment"
     }
   }
 }
