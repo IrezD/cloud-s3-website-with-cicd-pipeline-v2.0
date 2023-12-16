@@ -1,7 +1,7 @@
 name: 'Production Environment'
 
 on:
-  pull_request:
+  push:
     branches: [ "main" ]
 
 permissions:
