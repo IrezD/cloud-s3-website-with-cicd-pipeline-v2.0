@@ -1,10 +1,10 @@
-resource "aws_dynamodb_table" "tfstate-dynamodb-table" {
-  name         = "tfstate-portfolio-${var.env}"
-  hash_key     = "LockID"
-  billing_mode = "PAY_PER_REQUEST"
+# resource "aws_dynamodb_table" "tfstate-dynamodb-table" {
+#   name         = "tfstate-portfolio-${var.env}"
+#   hash_key     = "LockID"
+#   billing_mode = "PAY_PER_REQUEST"
 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-}
+#   attribute {
+#     name = "LockID"
+#     type = "S"
+#   }
+# }
