@@ -37,7 +37,7 @@ jobs:
         backend_config_file: ./terraform/env/dev.tfbackend
         var_file: ./terraform/env/dev.tfvars
 
-    - name: terraform apply
+    - name: Terraform apply
       uses: dflook/terraform-apply@v1
       with:
         path: ./terraform
