@@ -1,12 +1,16 @@
 name: 'Staging Environment'
 
 on:
-  push:
-    branches: [ "*", "!main" ]
+  pull_request:
+    branches: [ main ]
 
 permissions:
+  pull-requests: write
   contents: read
   id-token: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   terraform:
@@ -16,25 +20,27 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
-    
+      uses: actions/checkout@v4
 
     - name: AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v3
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: arn:aws:iam::806066816337:role/OIDC-Github-Workflow-Config
         role-session-name: OIDC-Github-Workflow-Config
         aws-region: eu-central-1
 
-    - name: Terraform Init
-      run: terraform init -backend-config=dev.tfbackend
-      working-directory: dev
+    - name: Terraform plan
+      uses: dflook/terraform-plan@v1
+      with:
+        path: ./terraform
+        label: Staging
+        backend_config_file: ./terraform/env/dev.tfbackend
+        var_file: ./terraform/env/dev.tfvars
 
-        
-    - name: Terraform Plan
-      run: terraform plan -input=false
-      working-directory: dev 
-
-    - name: Terraform Apply
-      run: terraform apply -auto-approve
-      working-directory: dev
+    - name: terraform apply
+      uses: dflook/terraform-apply@v1
+      with:
+        path: ./terraform
+        label: Staging
+        backend_config_file: ./terraform/env/dev.tfbackend
+        var_file: ./terraform/env/dev.tfvars

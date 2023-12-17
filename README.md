@@ -5,7 +5,7 @@ The objective of this project is to set up the deployment of a static website on
 
 ## Visual Representation of the Infrastructure
 
-![Diagram Image](https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0/assets/88015931/5c72f11e-540d-4c3e-9e20-33d8db5d43bd)
+![Diagram Image](https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0/assets/88015931/b1bb008d-92b3-4827-b164-ed05ccb17107)
 
 ## Prerequisuites
 
