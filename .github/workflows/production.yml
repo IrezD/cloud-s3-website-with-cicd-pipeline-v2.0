@@ -44,3 +44,4 @@ jobs:
         label: Production
         backend_config_file: ./terraform/env/prod.tfbackend
         var_file: ./terraform/env/prod.tfvars
+        auto_approve: true
