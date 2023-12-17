@@ -34,13 +34,13 @@ jobs:
       with:
         path: ./terraform
         label: Staging
-        backend_config_file: env/dev.tfbackend
-        var_file: env/dev.tfvars
+        backend_config_file: ./terraform/env/dev.tfbackend
+        var_file: ./terraform/env/dev.tfvars
 
     - name: terraform apply
       uses: dflook/terraform-apply@v1
       with:
         path: ./terraform
         label: Staging
-        backend_config_file: env/dev.tfbackend
-        var_file: env/dev.tfvars
+        backend_config_file: ./terraform/env/dev.tfbackend
+        var_file: ./terraform/env/dev.tfvars
