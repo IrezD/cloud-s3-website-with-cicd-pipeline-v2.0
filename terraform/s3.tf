@@ -35,7 +35,7 @@ resource "aws_s3_object" "object" {
   etag   = filemd5("../web/index.html")
 }
 
-#  ** -- Index html file ****
+#  ** -- Photo file ****
 
 resource "aws_s3_object" "profile-object" {
   bucket = aws_s3_bucket.site-bucket.bucket
