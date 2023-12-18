@@ -12,7 +12,7 @@ The objective of this project is to set up the deployment of a static website on
 * Authenticate OIDC with AWS and create an IAM Role with atleast access to the following resources (Route53, S3, DynamoDB, Certificate Manager & CloudFront).
 * Ensure to have a custom domain and a hosted zone configured on Route53.
 * Ensure to have an existing S3 bucket to store Terraform-state files and reference the 'bucket name' in the backend files
-* Create a DynamoDB with a LockID to lock terraform state during deployment in a collaborative environment
+* Create a DynamoDB table with a LockID to lock terraform state during deployment in a collaborative environment
 
 ## What this Project aims to Solve
 
