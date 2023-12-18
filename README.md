@@ -1,7 +1,7 @@
 # Static Website Hosted on S3 - Personal Porforlio
 
 ## Overview
-The objective of this project is to set up the deployment of a static website on AWS, utilizing Infrastructure as Code (IaC) through Terraform. Also aiming to establish a seamless CI/CD pipeline using GitHub Actions. Changes will be staged for code testing and review, with the final deployment to live production requiring a 'Pull Request' to the main branch after changes have been validated on a working branch. Additionally, the project adheres to cloud security best practices, implementing the principle of least privilege by assigning only the necessary policies to the IAM Role for the workflow, ensuring secure provisioning of resources.
+The objective of this project is to set up the deployment of a static website on AWS, utilizing Infrastructure as Code (IaC) through Terraform. Also aiming to establish a seamless CI/CD pipeline using GitHub Actions. Changes will be staged for code testing and review, with the final deployment to live production requiring a 'Push' to the main branch after changes have been validated on a working branch. Additionally, the project adheres to cloud security best practices, implementing the principle of least privilege by assigning only the necessary policies to the IAM Role for the workflow, ensuring secure provisioning of resources.
 
 ## Visual Representation of the Infrastructure
 
@@ -12,6 +12,7 @@ The objective of this project is to set up the deployment of a static website on
 * Authenticate OIDC with AWS and create an IAM Role with atleast access to the following resources (Route53, S3, DynamoDB, Certificate Manager & CloudFront).
 * Ensure to have a custom domain and a hosted zone configured on Route53.
 * Ensure to have an existing S3 bucket to store Terraform-state files and reference the 'bucket name' in the backend files
+* Create a DynamoDB table with a LockID to lock terraform state during deployment in a collaborative environment
 
 ## What this Project aims to Solve
 
