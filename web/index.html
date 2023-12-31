@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Owie - Resume</title>
     <style>
-
-        *{
+        * {
             margin: 0;
             padding: 0;
-        
         }
 
         a {
@@ -18,55 +16,48 @@
             color: rgb(28, 26, 26);
             font-weight: 600;
         }
+
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding-top: 50px;
-            padding-left: 120px;
-            /* background-color: rgba(241, 189, 111, 0.888); */
+            padding-left: 10px;
             line-height: 23px;
 
-            background: linear-gradient(95deg, #f3f3f3, #ff6b2c); 
+            background: linear-gradient(95deg, #f3f3f3, #ff6b2c);
             color: #000000;
         }
 
-        header{
+        header {
             margin-bottom: 2%;
+            text-align: center;
         }
 
-        header > p{
-            margin-left: 80px;
+        header>p {
+            margin-top: 10px;
         }
 
-
-        header > img{
-            margin-left: 30px;
+        header>img {
+            max-width: 150px;
+            margin-top: 10px;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: white;
         }
 
-        ul > li > a{
+        ul>li>a {
             text-decoration: none;
             color: rgb(28, 26, 26);
             font-weight: 600;
-            
         }
 
-        ul > li > a:hover{
+        ul>li>a:hover {
             color: rgb(60, 111, 136);
-            
         }
-
 
         h1,
         h2 {
             margin-bottom: 10px;
-        }
-
-        img {
-            border-radius: 50%;
-            max-width: 150px;
-            margin-top: 10px;
-            border-style: solid;
-            border-color: white;
         }
 
         section {
@@ -82,26 +73,35 @@
         li {
             margin-bottom: 5px;
         }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                padding-left: 5px;
+            }
+
+            header>p {
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-         <h1 style="padding-left: 18px;">Dennis Owie <!-- <i style="font-size: 19px;">- (Not live yet)</i>--></h1>  
+        <h1>Dennis Owie</h1>
         <p>Profile</p>
         <img src="pic001.jpg" alt="Profile Photo">
-        
     </header>
 
     <section>
         <h2>Contact Information</h2>
         <ul>
-            <li>Email: <a href="mailto:dennysben@gmail.com">dennysben@gmail.com</a> </li>
+            <li>Email: <a href="mailto:dennysben@gmail.com">dennysben@gmail.com</a></li>
             <li>Phone: (+48) 793-376121</li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/dennis-owie/">linkedin.com/in/dennis-owie/</a></li>
             <li>GitHub: <a href="https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0">github.com/IrezD/code-repository</a></li>
         </ul>
-    </section><br/>
+    </section>
 
     <section>
         <h2>Education</h2>
@@ -120,8 +120,6 @@
             <li>- Route53 for custom domain registration and usage.</li>
             <li>- Cloudfront Distribution to cache content to edge location and improve website performance.</li>
         </ul>
-    </section>
-
     </section>
 </body>
 
