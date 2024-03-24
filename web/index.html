@@ -1,126 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Owie - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: rgb(28, 26, 26);
-            font-weight: 600;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding-top: 50px;
-            padding-left: 10px;
-            line-height: 23px;
-
-            background: linear-gradient(95deg, #f3f3f3, #ff6b2c);
-            color: #000000;
-        }
-
-        header {
-            margin-bottom: 2%;
-            text-align: center;
-        }
-
-        header>p {
-            margin-top: 10px;
-        }
-
-        header>img {
-            max-width: 150px;
-            margin-top: 10px;
-            border-radius: 50%;
-            border-style: solid;
-            border-color: white;
-        }
-
-        ul>li>a {
-            text-decoration: none;
-            color: rgb(28, 26, 26);
-            font-weight: 600;
-        }
-
-        ul>li>a:hover {
-            color: rgb(60, 111, 136);
-        }
-
-        h1,
-        h2 {
-            margin-bottom: 10px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            body {
-                padding-left: 5px;
-            }
-
-            header>p {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <title>Resume Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <h1>Dennis Owie</h1>
-        <p>Profile</p>
-        <img src="pic001.jpg" alt="Profile Photo">
+        <h1>Dennis Iredia Owie</h1>
+        <p>Certified AWS Solution Architect - SAA</p>
     </header>
 
-    <section>
-        <h2>Contact Information</h2>
+    <section class="personal-info">
+        <h2>Personal Information</h2>
         <ul>
-            <li>Email: <a href="mailto:dennysben@gmail.com">dennysben@gmail.com</a></li>
-            <li>Phone: (+48) 793-376121</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/dennis-owie/">linkedin.com/in/dennis-owie/</a></li>
-            <li>GitHub: <a href="https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0">github.com/IrezD/code-repository</a></li>
+            <li><strong>Email:</strong> dennysben@gmail.com</li>
+            <li><strong>Phone:</strong> (+48) 793-376121</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dennis-owie/">linkedin.com/in/dennis-owie/</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0">github.com/IrezD/code-repository</a></li>
         </ul>
     </section>
 
-    <section>
+    <section class="education">
         <h2>Education</h2>
-        <p><strong>Warsaw University of Business</strong> - IT Management</p>
-        <p><strong>Graduation Year:</strong> 2023</p>
+        <p><strong>Bachelor of Science in IT Management</strong></p>
+        <p><strong>University:</strong> Warsaw University of Business</p>
     </section>
 
-    <section>
+    <section class="skills">
         <h2>About this Project:</h2>
-        <p>This simple website was hosted on Amazon Simple Storage Service - S3 bucket. By utilizing Terraform, I was able to define the AWS resources required for <br> the S3 bucket, including its configuration, policies, and permissions. GitHub Actions was set up to respond to changes pushed to the main branch of the repository, <br>automatically triggering the redeployment process, and ensuring seamless updates to the website.</p>
-        <p style="padding-top: 20px; padding-bottom: 10px;"><strong>Summary of the resources used:</strong></p>
+        <p>This website is hosted on Amazon Simple Storage Service (S3). By utilizing Terraform, I was able to build the Infratructure as code (IaC). <br>  This includes deploying all the AWS resources needed to host the website and have it running in a secure manner with low latency. <br> GitHub Actions was configured to respond to changes to changed in the code base in either Dev or Prod environment which triggers <br> redeployment process and ensuring seamless updates to the website.</p>
+        <p style="padding-top: 10px; padding-bottom: 2px;"><strong>Summary:</strong></p>
         <ul>
-            <li>- Terraform for defining and managing AWS resources.</li>
+            <li>- Terraform for deploying and managing AWS resources as code.</li>
             <li>- GitHub Actions for automation and CI/CD processes.</li>
             <li>- S3 bucket serving as the hosting platform for this website.</li>
             <li>- Route53 for custom domain registration and usage.</li>
             <li>- Cloudfront Distribution to cache content to edge location and improve website performance.</li>
         </ul>
+        </ul>
     </section>
-</body>
 
+    <section class="experience">
+        <h2>Other Projects:</h2>
+        <ul>
+            <li>** Orchestrating React application with Kubernetes - <a href="https://github.com/IrezD/k8-flask-react-docker-pg">https://github.com/IrezD/k8-flask-react-docker-pg</a></li>
+            <li>** Contanerizing FastAPI framework and running on ECS with EC2 launch-type setup -  <a href="https://github.com/IrezD/python-fastAPI-docker-image-v2">https://github.com/IrezD/python-fastAPI-docker-image-v2</a></li>
+        </ul>
+    </section>
+
+    
+</body>
 </html>
