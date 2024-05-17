@@ -35,11 +35,10 @@ resource "aws_s3_object" "object" {
   etag   = filemd5("../web/index.html")
 }
 
-#  ** -- Photo file ****
+#  ** -- static folder ****
 
 resource "aws_s3_object" "profile-object" {
   bucket = aws_s3_bucket.site-bucket.bucket
-  key    = "pic001.jpg"
-  source = "../web/pic001.jpg"
-  etag   = filemd5("../web/pic001.jpg")
+  key    = "static"
+  source = "../web/static"
 }
