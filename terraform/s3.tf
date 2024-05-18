@@ -35,10 +35,81 @@ resource "aws_s3_object" "object" {
   etag   = filemd5("../web/index.html")
 }
 
-#  ** -- static folder ****
+#  ** -- css files ****
 
-resource "aws_s3_object" "profile-object" {
+resource "aws_s3_object" "main-css" {
   bucket = aws_s3_bucket.site-bucket.bucket
-  key    = "static"
-  source = "../web/static"
+  key    = "main.css"
+  source = "../web/main.css"
+  etag   = filemd5("../web/main.css")
 }
+
+resource "aws_s3_object" "noscript-css" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "noscript.css"
+  source = "../web/noscript.css"
+  etag   = filemd5("../web/noscript.css")
+}
+
+#  ** -- image object ****
+
+resource "aws_s3_object" "photo" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "pic01-vintage2.jpg"
+  source = "../web/pic01-vintage2.jpg"
+  etag   = filemd5("../web/pic01-vintage2.jpg")
+}
+
+#  ** -- js files ****
+
+resource "aws_s3_object" "main-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "main.js"
+  source = "../web/main.js"
+  etag   = filemd5("../web/main.js")
+}
+
+resource "aws_s3_object" "breakpoints-min-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "breakpoints.min.js"
+  source = "../web/breakpoints.min.js"
+  etag   = filemd5("../web/breakpoints.min.js")
+}
+
+resource "aws_s3_object" "browser-min-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "browser.min.js"
+  source = "../web/browser.min.js"
+  etag   = filemd5("../web/browser.min.js")
+}
+
+resource "aws_s3_object" "jquery-min-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "jquery.min.js"
+  source = "../web/jquery.min.js"
+  etag   = filemd5("../web/jquery.min.js")
+}
+
+resource "aws_s3_object" "jquery-scrollex-min-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "jquery.scrollex.min.js"
+  source = "../web/jquery.scrollex.min.js"
+  etag   = filemd5("../web/jquery.scrollex.min.js")
+}
+
+resource "aws_s3_object" "jquery-scrolly-min-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "jquery.scrolly.min.js"
+  source = "../web/jquery.scrolly.min.js"
+  etag   = filemd5("../web/jquery.scrolly.min.js")
+}
+
+resource "aws_s3_object" "util-js" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "util.js"
+  source = "../web/util.js"
+  etag   = filemd5("../web/util.js")
+}
+
+
+
