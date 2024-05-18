@@ -42,6 +42,7 @@ resource "aws_s3_object" "main-css" {
   key    = "main.css"
   source = "../web/main.css"
   etag   = filemd5("../web/main.css")
+  content_type = "text/css"
 }
 
 resource "aws_s3_object" "noscript-css" {
@@ -49,6 +50,7 @@ resource "aws_s3_object" "noscript-css" {
   key    = "noscript.css"
   source = "../web/noscript.css"
   etag   = filemd5("../web/noscript.css")
+  content_type = "text/css"
 }
 
 #  ** -- image object ****
@@ -58,6 +60,7 @@ resource "aws_s3_object" "photo" {
   key    = "pic01-vintage2.jpg"
   source = "../web/pic01-vintage2.jpg"
   etag   = filemd5("../web/pic01-vintage2.jpg")
+  content_type = "application/javascript"
 }
 
 #  ** -- js files ****
@@ -67,6 +70,7 @@ resource "aws_s3_object" "main-js" {
   key    = "main.js"
   source = "../web/main.js"
   etag   = filemd5("../web/main.js")
+  content_type = "application/javascript"
 }
 
 resource "aws_s3_object" "breakpoints-min-js" {
@@ -74,6 +78,7 @@ resource "aws_s3_object" "breakpoints-min-js" {
   key    = "breakpoints.min.js"
   source = "../web/breakpoints.min.js"
   etag   = filemd5("../web/breakpoints.min.js")
+  content_type = "application/javascript"
 }
 
 resource "aws_s3_object" "browser-min-js" {
@@ -81,6 +86,7 @@ resource "aws_s3_object" "browser-min-js" {
   key    = "browser.min.js"
   source = "../web/browser.min.js"
   etag   = filemd5("../web/browser.min.js")
+  content_type = "application/javascript"
 }
 
 resource "aws_s3_object" "jquery-min-js" {
@@ -88,6 +94,7 @@ resource "aws_s3_object" "jquery-min-js" {
   key    = "jquery.min.js"
   source = "../web/jquery.min.js"
   etag   = filemd5("../web/jquery.min.js")
+  content_type = "application/javascript"
 }
 
 resource "aws_s3_object" "jquery-scrollex-min-js" {
@@ -95,6 +102,7 @@ resource "aws_s3_object" "jquery-scrollex-min-js" {
   key    = "jquery.scrollex.min.js"
   source = "../web/jquery.scrollex.min.js"
   etag   = filemd5("../web/jquery.scrollex.min.js")
+  content_type = "application/javascript"
 }
 
 resource "aws_s3_object" "jquery-scrolly-min-js" {
@@ -102,6 +110,7 @@ resource "aws_s3_object" "jquery-scrolly-min-js" {
   key    = "jquery.scrolly.min.js"
   source = "../web/jquery.scrolly.min.js"
   etag   = filemd5("../web/jquery.scrolly.min.js")
+  content_type = "application/javascript"
 }
 
 resource "aws_s3_object" "util-js" {
@@ -109,6 +118,7 @@ resource "aws_s3_object" "util-js" {
   key    = "util.js"
   source = "../web/util.js"
   etag   = filemd5("../web/util.js")
+  content_type = "application/javascript"
 }
 
 
