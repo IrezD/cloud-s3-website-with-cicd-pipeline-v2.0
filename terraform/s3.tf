@@ -55,7 +55,7 @@ resource "aws_s3_object" "noscript-css" {
 
 #  ** -- svg files ****
 
-resource "aws_s3_object" "noscript-css" {
+resource "aws_s3_object" "intro-svg" {
   bucket = aws_s3_bucket.site-bucket.bucket
   key    = "intro.svg"
   source = "../web/intro.svg"
