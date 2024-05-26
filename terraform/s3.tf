@@ -53,7 +53,17 @@ resource "aws_s3_object" "noscript-css" {
   content_type = "text/css"
 }
 
-#  ** -- image object ****
+#  ** -- svg files ****
+
+resource "aws_s3_object" "noscript-css" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "intro.svg"
+  source = "../web/intro.svg"
+  etag   = filemd5("../web/intro.svg")
+  content_type = "image/svg+xml"
+}
+
+#  ** -- images ****
 
 resource "aws_s3_object" "photo" {
   bucket = aws_s3_bucket.site-bucket.bucket
