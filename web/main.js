@@ -188,3 +188,18 @@
 			});
 
 })(jQuery);
+
+
+const target = document.getElementById("typing-animation");
+const text = "(Flask), HTML/CSS, Docker and more.";
+let index = 0;
+
+const type = () => {
+  if (index < text.length) {
+    target.textContent += text[index];
+    index++;
+  }
+  setTimeout(type, Math.floor(Math.random() * 150) + 50);
+};
+
+type();

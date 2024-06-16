@@ -1,10 +1,118 @@
 @import url(fontawesome-all.min.css);
 
+@font-face {
+	font-family: 'Fonarto';
+	src: url(Fonarto-XT.ttf) format('OpenType');
+
+}
+
+@font-face {
+	font-family: 'Fonarto-bold';
+	src: url(Fonarto.ttf);
+}
+
+@font-face {
+	font-family: 'ubuntu';
+	src: url(Ubuntu-L.ttf) format('OpenType');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(Raleway-Regular.ttf) format('OpenType');
+}
+
+/* //logo font */
+
+@font-face {
+	font-family: 'nexa-rust';
+	src: url(NexaRustScriptL-0.otf);
+}
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+
+
+.name {
+	font-family: 'Fonarto', sans-serif;
+	font-size: 120px; 
+	padding-top: 50px;
+	color: #e4e2e2;
+	text-shadow: 12px 10px #0000001f;
+}
+
+.custom-body {
+	font-family: 'Raleway';
+	font-size: 20px;
+	line-height: 180%;
+}
+
+#tag-label{
+	color: orange;
+}
+
+.custom-tags{
+	font-weight: bold;
+	font-size: 17px;
+	color: #e3e2e2;
+}
+
+.main-body {
+	padding: 20px 0px 30px 15px;
+	border-radius: 5px;
+	font-family: 'ubuntu';
+	box-shadow: 1px -3px rgb(135, 50, 124);
+}
+
+.custom-h2 {
+	font-family: 'Fonarto-bold', sans-serif;
+	font-size: 40px;
+}
+
+.custom-h3{
+	font-family: 'Fonarto-bold', sans-serif;
+	font-size: 26px;
+	letter-spacing: 0.2px;
+	color: #fffffffa;
+}
+
+.fav-quote{
+	font-size: 35px;
+	font-family: 'nexa-rust';
+	font-style: italic;
+}
+
+/* Primary button hover effect */
+
+.button.primary:hover{
+	background-color: rgb(225, 225, 225);
+}
+
+@keyframes blinker {
+	from { opacity: 1.0; }
+	60% { opacity: 0.1; }
+	to { opacity: 1.0; }
+}
+  
+.blink {
+	animation: blinker 1s infinite;
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+}
+
+/* header for project pages */
+
+.fw-bold {
+	font-family: 'Fonarto-bold', sans-serif;
+	color: #cebbc8;
+	font-size: 30px;
+
+}
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -194,6 +302,7 @@ input, select, textarea {
 			margin: 0 0 1.3em 0;
 			position: relative;
 			padding-bottom: 0.35em;
+			font-family: 'Fonarto-bold', sans-serif;
 		}
 
 			h1.major:after {
@@ -1976,6 +2085,10 @@ input, select, textarea {
 				.button:hover:active:after {
 					opacity: 0.1;
 				}
+			button.primary {
+			background-color: #ffffff;
+			color: #312450 !important;
+		}
 
 /* Features */
 
@@ -3381,7 +3494,8 @@ input, select, textarea {
 			color: #ffffff;
 			display: block;
 			font-size: 1.25em;
-			font-weight: bold;
+			/* font-weight: bold; */
+			font-family: 'nexa-rust';
 		}
 
 		#header > nav {
