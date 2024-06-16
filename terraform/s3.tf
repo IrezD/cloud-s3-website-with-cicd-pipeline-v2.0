@@ -26,13 +26,38 @@ resource "aws_s3_bucket_website_configuration" "bucket-website-config" {
   }
 }
 
-#  ** -- Index html file ***
+#  ** -- HTML Pages file ***
 
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.site-bucket.bucket
   key    = "index.html"
   source = "../web/index.html"
   etag   = filemd5("../web/index.html")
+  content_type = "text/html"
+}
+
+resource "aws_s3_object" "devops" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "devops.html"
+  source = "../web/devops.html"
+  etag   = filemd5("../web/devops.html")
+  content_type = "text/html"
+}
+
+resource "aws_s3_object" "cert" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "cert.html"
+  source = "../web/cert.html"
+  etag   = filemd5("../web/cert.html")
+  content_type = "text/html"
+}
+
+resource "aws_s3_object" "wordpress" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "wordpress.html"
+  source = "../web/wordpress.html"
+  etag   = filemd5("../web/wordpress.html")
+  content_type = "text/html"
 }
 
 #  ** -- css files ****
