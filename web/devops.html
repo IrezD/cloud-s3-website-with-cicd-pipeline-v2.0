@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dennis Owie - DevOps Projects </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Dennis Owie </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html" class="active">Profile</a></li>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">DevOps Projects</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<p class="custom-body">This category includes projects where I have implemented CI/CD pipelines, automated installation & configuration process with Bash scripting, developed Infrastructure as Code (IaC), worked extensively with Kubernetes and containerization.</p> <hr />
+			
+							<h3 class="fw-bold">EKS Cluster with ArgoCD</h3>
+									<p class="custom-body">Deployed an application with Kubernetes (EKS) which is Amazon's Elastic Kubernetes Service (EKS) to manage and run containerized applications. I also integrated EKS with ArgoCD, a continuous delivery tool for Kubernetes to automate deployment process.</p>
+										
+									<p class="custom-body">This setup allows for continuous and automated deployment within the cluster. Changes made to the application's Git repository will automatically trigger ArgoCD to deploy the updated application to the EKS cluster.</p>
+									
+									<img width="80%" src="argocd.png" class="img-fluid" alt="..."> <br><br>
+
+									<p class="custom-body custom-tags">Tags: 
+										<span id="tag-label">Docker, Kubernetes, ArgoCD, YAML, AWS </span>
+									</p>
+
+									<a href="https://github.com/IrezD/EKS-cluster-with-argoCD" target="_blank" class="button primary">Project Link</a>
+									<hr />
+
+							<h3 class="fw-bold">Website Hosted on AWS with CI/CD Pipeline (GitHub Actions)</h3>
+									<p class="custom-body">The objective of this project is to set up the deployment of a static website on AWS, utilizing Infrastructure as Code (IaC) through Terraform. Also aiming to establish a seamless CI/CD pipeline using GitHub Actions. Changes will be staged for code testing and review, with the final deployment to live production requiring a 'Push' to the main branch after changes have been validated on a working branch. Additionally, the project adheres to cloud security best practices, implementing the principle of least privilege by assigning only the necessary policies to the IAM Role for the workflow, ensuring secure provisioning of resources.</p>
+									
+									<img width="50%" height="500px" src="s3-pipeline.png" class="img-fluid" alt="..."> <br><br>
+
+									<p class="custom-body custom-tags">Tags: 
+										<span id="tag-label">Terraform, AWS, S3, Route53, CloudFront, GitHub Actions, IAM, DynamoDB </span>
+									</p>
+
+									<a href="https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0" target="_blank" class="button primary">Project Link</a>
+									<hr />
+
+							<h3 class="fw-bold">Jenkins and GitLab instance Behind NGINX on EC2 Ubuntu Server</h3>
+									<p class="custom-body">This project involves deploying a Jenkins server and a GitLab instance on an Amazon EC2 Ubuntu server, with Nginx configured as a reverse proxy. This setup allows for a single entry point to access both GitLab and Jenkins instance. Space space was also created on the Linux Server to accommodate both services to run smoothly.</p>
+
+									<p class="custom-body">Jenkins is installed as a Service on the Service, while GitLab is running as a Docker container. Bash script is used to automated the installation and configuration of both service. In addition, a basic Jenkins Pipeline was created to copy the latest code from the Git Repo to local directory using Jenkinsfile.</p>
+									
+									<img width="80%" src="jenkins-gitlab.png" class="img-fluid" alt="..."> <br><br>
+
+									<p class="custom-body custom-tags">Tags: 
+										<span id="tag-label">Bash Scripting, Jenkins, Terraform, AWS, GitLab, Linux (Ubuntu), EC2, Route53, Docker </span>
+									</p>
+
+									<a href="https://github.com/IrezD/nginx-reverse-proxy-for-jenkins-server" target="_blank" class="button primary">Project Link</a>
+									<hr />
+
+				
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; All rights reserved</li><li>GitHub <a href="https://github.com/IrezD">IrezD</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="jquery.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
+
+	</body>
+</html>

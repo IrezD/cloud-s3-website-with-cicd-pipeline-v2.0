@@ -1,104 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Portfolio</title>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f3f3;
-}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dennis Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/7c954af624.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload">
 
-header {
-    background-color: #33303b;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Profile</a></li>
+							<li><a href="#two">Projects</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-header h1, header p {
-    margin: 0;
-}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-section {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-}
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1 class="name">Dennis Owie</h1>
+							<p class="custom-body main-body" style="font-size: 20px; background-color: rgba(0, 0, 0, 0.641);"><span style="color: rgb(52, 127, 11); font-weight: bold;">Welcome@user: ~$ </span><span id="typing-animation">Discover my projects spanning both Web Development and DevOps projects, with technologies like Kubernetes, AWS, Python </span><span class="blink">|</span></p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">More About Me</a></li>
+							</ul>
+						</div>
+					</section>
 
-section h2 {
-    color: #333;
-    margin-top: 0;
-}
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="pic01-vintage2.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 class="custom-h2">About Me</h2>
+									<p class="custom-body">Hi there! I'm Dennis Iredia Owie, a Knowledge Coordinator with a passion for automation and cloud technologies. I am currently based in Warsaw, Poland and when I am not working, you can find me experimenting with new recipes in the Kitchen or learning to play new songs on the Bass guitar. I bring the same level of creativity and open-mindedness to my professional endeavours. <br><br> 
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+									I specialize in building and maintaining CI/CD pipelines and my skills includes Docker, Kubernetes, Amazon Web Service (AWS), Terraform and Web Development. I am always focused on delivering the best possible results whether it is streamlining deployment processes or optimizing infrastructure. <br><br>
+										
+									I invite you to explore my work, learn more about my certifications and don't hesitate to contact me for collaboration or inquiries. Cheers! </p>
+									<ul class="actions">
+										<li><a href="cert.html" class="button">Check out my certifications</a></li>
+									</ul>
+								</div>
+							</div>
+						
+						</section>
 
-li {
-    margin-bottom: 5px;
-}
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up" style="background-color: #493382;">
+						<div class="inner">
+							<h2 class="custom-h2">Projects</h2>
+							<p class="custom-body">Explore the project categories listed below.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cloud"></span>
+									<i class="bi bi-linkedin"></i>
+									<h3 class="custom-h3">DevOps Projects</h3>
+									<p class="custom-body">It includes projects where I have implemented CI/CD pipelines, automated processes, developed Infrastructure as Code (IaC), worked extensively with Kubernetes and containerization.</p>
+									<button type="button" class="btn btn-primary btn-sm"><a href="devops.html">View Project</a></button>
+								</section>
+								<section>
+									<span class="icon major solid fa-diagram-project"></span>
+									<h3 class="custom-h3">WordPress Projects</h3>
+									<p class="custom-body">This category features website created with WordPress using custom styling as well. I've implemented personalized styling and incorporated a variety of plugins to enhance functionality. <!-- Each project is a unique showcase of my ability to adapt and integrate diverse tools within the WordPress platform. --></p>
+									<button type="button" class="btn btn-primary btn-sm"><a href="wordpress.html">View Project</a></button>
+								</section>
+								<section>
+									<span class="icon solid major fa-p"></span>
+									<h3 class="custom-h3">Python 	</h3>
+									<p class="custom-body">Highlights my proficiency in Python programming, where I've developed applications using the Flask web framework and RestAPI. These applications demonstrate my ability to create efficient, scalable, and maintainable web services</p>
+									<!-- <button type="button" class="btn btn-primary btn-sm"><a href="python.html">View Project</a></button> -->
+								</section>
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3 class="custom-h3">Others</h3>
+									<p class="custom-body">This includes HTML/CSS website, coding challenges and lots more.</p>
+									<!-- <button type="button" class="btn btn-primary btn-sm"><a href="#">View Project</a></button> -->
+								</section>
+							</div>
+							<!-- <ul class="actions">
+								<li><a href="templates/generic.html" class="button">Learn more</a></li>
+							</ul> -->
+						</div>
+					</section>
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2 class="custom-h2">Get in touch</h2>
+							<p class="custom-body">Feel free to reach out using any of the following mediums.</p>
+							<div class="split style1">
+															
+								<section>
+									<ul class="contact">
+										<li>
+											<h3 class="custom-h3">Email</h3>
+											<a href="mailto:dennysben@gmail.com" class="custom-body">dennysben@gmail.com</a>
+										</li>
+										<li>
+											<h3 class="custom-h3">Phone</h3>
+											<span class="custom-body">(48) 793-376-121</span>
+										</li>
+										<li>
+											<h3 class="custom-h3">Social</h3>
+											<ul class="icons">
+												<li><a href="https://www.linkedin.com/in/dennis-owie/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://github.com/IrezD" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.instagram.com/lowkeydenzy" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												
+											</ul>
+										</li>
+									</ul>
+								</section>
 
-a:hover {
-    text-decoration: underline;
-}
+								<section>
+									<h3 class="custom-h3" style="padding-bottom: 9%;">Favourite Quote:</h3>
+									"<span class="custom-body fav-quote">Find what you love and love more.</span>"<br><br>
+									<span class="custom-body">~ Nayyirah Waheed</span>
+								</section>
 
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Dennis Iredia Owie</h1>
-        <p>Certified AWS Solution Architect - SAA | Kubernetes Certified</p>
-    </header>
+							</div>
+						</div>
+					</section>
 
-    <section class="personal-info">
-        <h2>Personal Information</h2>
-        <ul>
-            <li><strong>Email:</strong> dennysben@gmail.com</li>
-            <li><strong>Phone:</strong> (+48) 793-376121</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dennis-owie/">linkedin.com/in/dennis-owie/</a></li>
-            <li><strong>Source code on GitHub:</strong> <a href="https://github.com/IrezD/cloud-s3-website-with-cicd-pipeline-v2.0">github.com/IrezD/code-repository</a></li>
-        </ul>
-    </section>
+			</div>
 
-    <section class="education">
-        <h2>Education</h2>
-        <p><strong>Bachelor of Science in IT Management</strong></p>
-        <p><strong>University:</strong> Warsaw University of Business</p>
-    </section>
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; All rights reserved</li><li>GitHub <a href="https://github.com/IrezD">IrezD</a></li>
+					</ul>
+				</div>
+			</footer>
 
-    <section class="skills">
-        <h2>About this Project:</h2>
-        <p>This website is hosted on Amazon Simple Storage Service (S3). By utilizing Terraform, I was able to build the Infrastructure as code (IaC). <br> This includes deploying all the AWS resources needed to host the website and have it running in a secure manner with very low latency. <br> GitHub Actions was configured to trigger the re-deployment process and ensuring seamless updates to the website.</p>
-        <p style="padding-top: 10px; padding-bottom: 2px;"><strong>Summary:</strong></p>
-        <ul>
-            <li>- Terraform for deploying and managing AWS resources as code.</li>
-            <li>- GitHub Actions for automation and CI/CD processes.</li>
-            <li>- S3 bucket serving as the hosting platform for this website.</li>
-            <li>- Route53 for custom domain registration and usage.</li>
-            <li>- Cloudfront Distribution to cache content to edge location and improve website performance.</li>
-        </ul>
-        </ul>
-    </section>
+		<!-- Scripts -->
+		    <script src="popper.min.js"></script>
+			<script src="jquery.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
 
-    <section class="experience">
-        <h2>Other Projects:</h2>
-        <ul>
-            <li>** Orchestrating React application with Kubernetes - <a href="https://github.com/IrezD/k8-flask-react-docker-pg">https://github.com/IrezD/k8-flask-react-docker-pg</a></li>
-            <li>** Contanerizing FastAPI framework and running on ECS with EC2 launch-type setup -  <a href="https://github.com/IrezD/python-fastAPI-docker-image-v2">https://github.com/IrezD/python-fastAPI-docker-image-v2</a></li>
-        </ul>
-    </section>
-
-    
-</body>
+	</body>
 </html>

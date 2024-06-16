@@ -26,20 +26,59 @@ resource "aws_s3_bucket_website_configuration" "bucket-website-config" {
   }
 }
 
-#  ** -- Index html file ***
+#  ** -- HTML Pages file ***
 
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.site-bucket.bucket
   key    = "index.html"
   source = "../web/index.html"
   etag   = filemd5("../web/index.html")
+  content_type = "text/html"
 }
 
-#  ** -- Photo file ****
-
-resource "aws_s3_object" "profile-object" {
+resource "aws_s3_object" "devops" {
   bucket = aws_s3_bucket.site-bucket.bucket
-  key    = "pic001.jpg"
-  source = "../web/pic001.jpg"
-  etag   = filemd5("../web/pic001.jpg")
+  key    = "devops.html"
+  source = "../web/devops.html"
+  etag   = filemd5("../web/devops.html")
+  content_type = "text/html"
 }
+
+resource "aws_s3_object" "cert" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "cert.html"
+  source = "../web/cert.html"
+  etag   = filemd5("../web/cert.html")
+  content_type = "text/html"
+}
+
+resource "aws_s3_object" "wordpress" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "wordpress.html"
+  source = "../web/wordpress.html"
+  etag   = filemd5("../web/wordpress.html")
+  content_type = "text/html"
+}
+
+#  ** -- css files ****
+
+resource "aws_s3_object" "main-css" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "main.css"
+  source = "../web/main.css"
+  etag   = filemd5("../web/main.css")
+  content_type = "text/css"
+}
+
+resource "aws_s3_object" "noscript-css" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "noscript.css"
+  source = "../web/noscript.css"
+  etag   = filemd5("../web/noscript.css")
+  content_type = "text/css"
+}
+
+
+
+
+
