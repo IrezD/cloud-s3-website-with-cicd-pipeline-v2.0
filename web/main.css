@@ -60,11 +60,35 @@
 	color: #e3e2e2;
 }
 
+.main-divider{
+	background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+	width: 20%; 
+	margin: -5% 0 6% 1%;
+	height: 0.15em;
+}
+
 .main-body {
-	padding: 20px 0px 30px 15px;
-	border-radius: 5px;
+	padding: 20px 0px 30px 30px;
+	border-radius: 1px;
 	font-family: 'ubuntu';
 	box-shadow: 1px -3px rgb(135, 50, 124);
+	font-size: 20px; 
+	background-color: rgba(0, 0, 0, 0.641);
+	line-height: 120%;
+	width: 88%;
+}
+
+
+#welcome-user{
+	color: rgb(52, 127, 11); 
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1px;
+}
+
+#typing-animation {
+	font-size: 17px;
+
 }
 
 .custom-h2 {
@@ -190,6 +214,50 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 480px) {
+
+		/* my custom Mobile view */
+
+		.name {
+			font-size: 85px; 
+			line-height: 110px;
+			padding-top: 50px;
+			color: #e4e2e2;
+			text-shadow: 8px 5px #0000001f;
+			text-align: center;
+		}
+
+		.main-divider{
+			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+			width: 28%; 
+			margin-left: 36%; 
+			height: 0.15em;
+			margin-top: 2%;
+		}
+
+		.main-body {
+			display: none;
+		}
+
+		.actions li{
+			display: none;
+		}
+
+		.custom-h2 {
+			text-align: center;
+		}
+
+		.custom-body {
+			text-align: left;
+			font-size: 17px;
+			line-height: 190%;
+		}
+
+		.fav-quote{
+			font-size: 40px;
+		}
+		
+
+
 
 		html, body {
 			min-width: 320px;
