@@ -61,10 +61,26 @@
 }
 
 .main-body {
-	padding: 20px 0px 30px 15px;
-	border-radius: 5px;
+	padding: 20px 0px 30px 30px;
+	border-radius: 1px;
 	font-family: 'ubuntu';
 	box-shadow: 1px -3px rgb(135, 50, 124);
+	font-size: 20px; 
+	background-color: rgba(0, 0, 0, 0.641);
+	line-height: 120%;
+	width: 88%;
+}
+
+#welcome-user{
+	color: rgb(52, 127, 11); 
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1px;
+}
+
+#typing-animation {
+	font-size: 17px;
+
 }
 
 .custom-h2 {
@@ -190,6 +206,46 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 480px) {
+
+		/* my custom Mobile view */
+
+		.name {
+			font-size: 90px; 
+			line-height: 110px;
+			padding-top: 50px;
+			color: #e4e2e2;
+			text-shadow: 8px 5px #0000001f;
+			text-align: center;
+		}
+
+		.main-body {
+			padding: 20px 0px 30px 30px;
+			border-radius: 1px;
+			font-family: 'ubuntu';
+			box-shadow: 0px -3px rgb(135, 50, 124);
+			font-size: 20px; 
+			background-color: rgba(0, 0, 0, 0.641);
+			line-height: 190%;
+			width: 100%;
+		}
+
+
+		.custom-h2 {
+			text-align: center;
+		}
+
+		.custom-body {
+			text-align: left;
+			font-size: 17px;
+			line-height: 190%;
+		}
+
+		.fav-quote{
+			font-size: 40px;
+		}
+		
+
+
 
 		html, body {
 			min-width: 320px;
