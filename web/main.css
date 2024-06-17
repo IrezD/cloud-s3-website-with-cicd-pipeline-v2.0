@@ -71,6 +71,7 @@
 	width: 88%;
 }
 
+
 #welcome-user{
 	color: rgb(52, 127, 11); 
 	font-weight: bold;
@@ -210,7 +211,7 @@ input, select, textarea {
 		/* my custom Mobile view */
 
 		.name {
-			font-size: 90px; 
+			font-size: 98px; 
 			line-height: 110px;
 			padding-top: 50px;
 			color: #e4e2e2;
@@ -227,8 +228,12 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.641);
 			line-height: 190%;
 			width: 100%;
+			display: none;
 		}
 
+		.actions li{
+			display: none;
+		}
 
 		.custom-h2 {
 			text-align: center;
