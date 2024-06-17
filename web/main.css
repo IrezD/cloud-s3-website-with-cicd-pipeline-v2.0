@@ -60,6 +60,13 @@
 	color: #e3e2e2;
 }
 
+.main-divider{
+	background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+	width: 20%; 
+	margin: -5% 0 6% 1%;
+	height: 0.15em;
+}
+
 .main-body {
 	padding: 20px 0px 30px 30px;
 	border-radius: 1px;
@@ -211,7 +218,7 @@ input, select, textarea {
 		/* my custom Mobile view */
 
 		.name {
-			font-size: 98px; 
+			font-size: 85px; 
 			line-height: 110px;
 			padding-top: 50px;
 			color: #e4e2e2;
@@ -219,15 +226,15 @@ input, select, textarea {
 			text-align: center;
 		}
 
+		.main-divider{
+			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+			width: 28%; 
+			margin-left: 36%; 
+			height: 0.15em;
+			margin-top: 2%;
+		}
+
 		.main-body {
-			padding: 20px 0px 30px 30px;
-			border-radius: 1px;
-			font-family: 'ubuntu';
-			box-shadow: 0px -3px rgb(135, 50, 124);
-			font-size: 20px; 
-			background-color: rgba(0, 0, 0, 0.641);
-			line-height: 190%;
-			width: 100%;
 			display: none;
 		}
 
