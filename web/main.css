@@ -242,6 +242,10 @@ input, select, textarea {
 			display: none;
 		}
 
+		.cert-button li{
+			display: block;
+		}
+
 		.custom-h2 {
 			text-align: center;
 		}
