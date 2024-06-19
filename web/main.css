@@ -109,6 +109,23 @@
 	font-style: italic;
 }
 
+/* Image sizes */
+
+.s3-pipeline-image{
+	width: 50%;
+	height: 500px
+}
+
+.argocd-image{
+	width: 80%;
+	height: 500px;
+}
+
+.jenkins-gitlab-image{
+	width: 80%;
+	height: 550px;
+}
+
 /* Primary button hover effect */
 
 .button.primary:hover{
@@ -260,6 +277,28 @@ input, select, textarea {
 			font-size: 40px;
 		}
 		
+		.fw-bold {
+			font-size: 25px;
+			padding-bottom: 20px;
+		
+		}
+
+		.s3-pipeline-image{
+			width: 100%;
+			height: 200px
+		}
+		
+		.argocd-image{
+			width: 100%;
+			height: 200px;
+		}
+
+		.jenkins-gitlab-image{
+			width: 100%;
+			height: 200px;
+		}
+
+
 
 
 
