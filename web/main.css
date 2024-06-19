@@ -283,23 +283,11 @@ input, select, textarea {
 		
 		}
 
-		.s3-pipeline-image{
+		.mobile-image{
 			width: 100%;
-			height: 200px
+			height: 200px;
 		}
 		
-		.argocd-image{
-			width: 100%;
-			height: 200px;
-		}
-
-		.jenkins-gitlab-image{
-			width: 100%;
-			height: 200px;
-		}
-
-
-
 
 
 		html, body {

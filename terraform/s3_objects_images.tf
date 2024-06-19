@@ -59,3 +59,11 @@ resource "aws_s3_object" "vees-banner" {
   etag   = filemd5("../web/vees-banner.png")
   content_type = "image/png"
 }
+
+resource "aws_s3_object" "py-numbersapi" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "py-numbersapi.png"
+  source = "../web/py-numbersapi.png"
+  etag   = filemd5("../web/py-numbersapi.png")
+  content_type = "image/png"
+}
