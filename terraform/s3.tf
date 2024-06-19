@@ -60,6 +60,14 @@ resource "aws_s3_object" "wordpress" {
   content_type = "text/html"
 }
 
+resource "aws_s3_object" "python" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "python.html"
+  source = "../web/python.html"
+  etag   = filemd5("../web/python.html")
+  content_type = "text/html"
+}
+
 #  ** -- css files ****
 
 resource "aws_s3_object" "main-css" {
