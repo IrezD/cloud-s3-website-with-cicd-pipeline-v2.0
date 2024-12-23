@@ -8,6 +8,14 @@ resource "aws_s3_object" "photo" {
   content_type = "image/jpeg"
 }
 
+resource "aws_s3_object" "photo" {
+  bucket = aws_s3_bucket.site-bucket.bucket
+  key    = "favicon.ico"
+  source = "../web/favicon.ico"
+  etag   = filemd5("../web/favicon.ico")
+  content_type = "image/vnd.microsoft.icon"
+}
+
 
 resource "aws_s3_object" "argocd" {
   bucket = aws_s3_bucket.site-bucket.bucket
