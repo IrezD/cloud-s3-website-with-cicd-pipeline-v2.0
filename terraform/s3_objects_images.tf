@@ -8,7 +8,7 @@ resource "aws_s3_object" "photo" {
   content_type = "image/jpeg"
 }
 
-resource "aws_s3_object" "photo" {
+resource "aws_s3_object" "favicon" {
   bucket = aws_s3_bucket.site-bucket.bucket
   key    = "favicon.ico"
   source = "../web/favicon.ico"
