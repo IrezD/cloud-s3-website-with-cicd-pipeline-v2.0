@@ -3025,7 +3025,7 @@ input, select, textarea {
 
 	/* 👇👇For moving social links to the right on DESKTOP version */
 
-	ul.icons-social{
+	ul.top-icons-social{
 		margin-left: 77%; width: 20%
 	}
 
@@ -3046,14 +3046,11 @@ input, select, textarea {
 					display: none;
 				}
 
-				/* 👇👇For moving social links to the right on MOBILE version */
+				/* 👇👇Removing top social links on MOBILE version */
 
 				@media screen and (max-width: 1024px) {
-					ul.icons-social{
-						margin-left: 0%;
-						width: 100%;
-						padding-left: 30%;
-						font-size: 22px;
+					ul.top-icons-social{
+						display: none;
 					}
 				}
 
