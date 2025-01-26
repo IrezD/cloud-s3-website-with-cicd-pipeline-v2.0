@@ -1,5 +1,5 @@
-resource "aws_acm_certificate" "site-cert" {
-  domain_name       = var.fqdn
-  validation_method = "EMAIL"
-  provider          = aws.acm
+data "aws_acm_certificate" "site-cert" {
+  domain      = var.fqdn
+  statuses = ["ISSUED"]
+  provider = aws.acm
 }
